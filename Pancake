@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pancake Recipe</title>
+</head>
+<body>
+    <a href="../index.html">Home</a>
+
+    <h1>Pancakes</h1>
+
+    <img src="https://www.allrecipes.com/thmb/pancakes-pancake.jpg" alt="Fluffy Pancakes" width="400">
+
+    <h2>Description</h2>
+    <p>These pancakes are fluffy and perfect for a weekend breakfast.</p>
+
+    <h2>Ingredients</h2>
+    <ul>
+        <li>Flour</li>
+        <li>Milk</li>
+        <li>Eggs</li>
+        <li>Sugar</li>
+        <li>Baking powder</li>
+        <li>Butter</li>
+    </ul>
+
+    <h2>Steps</h2>
+    <ol>
+        <li>Mix dry ingredients together.</li>
+        <li>Whisk wet ingredients and combine with dry mixture.</li>
+        <li>Heat a pan and pour batter.</li>
+        <li>Cook until bubbles form, then flip.</li>
+        <li>Serve warm with syrup.</li>
+    </ol>
+</body>
+</html>
