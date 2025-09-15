@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lasagna Recipe</title>
+</head>
+<body>
+    <a href="https://www.lasagna/lasagna.con.html">Home</a>
+
+    <h1>Lasagna</h1>
+
+    <img src="https://www.allrecipes.com/thmb/lasagna-image-tomato.jpg" alt="Delicious Lasagna" width="400">
+
+    <h2>Description</h2>
+    <p>This lasagna is a cheesy, meaty, and flavorful dish that is perfect for dinner.</p>
+
+    <h2>Ingredients</h2>
+    <ul>
+        <li>Lasagna noodles</li>
+        <li>Ground beef</li>
+        <li>Tomato sauce</li>
+        <li>Mozzarella cheese</li>
+        <li>Parmesan cheese</li>
+        <li>Italian seasoning</li>
+    </ul>
+
+    <h2>Steps</h2>
+    <ol>
+        <li>Cook lasagna noodles according to package instructions.</li>
+        <li>Brown ground beef and mix with tomato sauce and seasoning.</li>
+        <li>Layer noodles, meat sauce, ricotta, and mozzarella in a baking dish.</li>
+        <li>Bake at 375°F (190°C) for 45 minutes.</li>
+        <li>Let rest for 15 minutes before serving.</li>
+    </ol>
+</body>
+</html>
