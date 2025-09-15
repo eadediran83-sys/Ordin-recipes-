@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fried Rice Recipe</title>
+</head>
+<body>
+    <a href="www.fried rice.com.html">Home</a>
+
+    <h1>Fried Rice</h1>
+
+    <img src="https://www.allrecipes.com/thmb/fried-rice-fried rice.jpg" alt="Fried Rice" width="400">
+
+    <h2>Description</h2>
+    <p>This fried rice is a quick and tasty dish, perfect for using leftover rice.</p>
+
+    <h2>Ingredients</h2>
+    <ul>
+        <li>Cooked rice</li>
+        <li>Soy sauce</li>
+        <li>Vegetables</li>
+        <li>Eggs</li>
+        <li>Garlic</li>
+        <li>Oil</li>
+    </ul>
+
+    <h2>Steps</h2>
+    <ol>
+        <li>Heat oil in a pan and scramble eggs.</li>
+        <li>Cook for another 3–5 minutes until hot.</li>
+        <li>Serve warm.</li>
+    </ol>
+</body>
+</html>
