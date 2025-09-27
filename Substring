@@ -1,0 +1,26 @@
+def substrings(word, dictionary)
+  # Convert word to lowercase to make it case-insensitive
+  word = word.downcase
+  
+  results = Hash.new(0) # default value 0 for each key
+
+  dictionary.each do |dict_word|
+    count = word.scan(dict_word).length
+    results[dict_word] += count if count > 0
+  end
+
+  results
+end
+
+# Example dictionary
+dictionary = ["below","down","go","going","horn","how","howdy","it","i",
+              "low","own","part","partner","sit"]
+
+# Test 1
+p substrings("below", dictionary)
+# => { "below" => 1, "low" => 1 }
+
+# Test 2
+p substrings("Howdy partner, sit down! How's it going?", dictionary)
+# => { "how" => 2, "howdy" => 1, "partner" => 1, "sit" => 1,
+#      "down" => 1, "go" => 1, "going" => 1, "own" => 1, "part" => 1 }
