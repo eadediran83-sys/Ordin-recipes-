@@ -1,0 +1,20 @@
+def caesar_cipher(string, shift)
+  result = ""
+
+  string.each_char do |char|
+    if char.match?(/[A-Za-z]/)   # check if it's a letter
+      base = char.ord < 91 ? 'A'.ord : 'a'.ord
+      # Shift within alphabet range
+      new_char = ((char.ord - base + shift) % 26 + base).chr
+      result << new_char
+    else
+      result << char   # keep punctuation, spaces, etc.
+    end
+  end
+
+  result
+end
+
+# Example:
+puts caesar_cipher("What a string!", 5)
+# => "Bmfy f xywnsl!"
