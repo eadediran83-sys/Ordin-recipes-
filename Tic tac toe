@@ -1,0 +1,79 @@
+class TicTacToe
+  def initialize
+    @board = Array.new(9, " ")
+    @current_player = "X"
+  end
+
+  def play
+    loop do
+      display_board
+      player_move
+      if winner?
+        display_board
+        puts "🎉 Player #{@current_player} wins!"
+        break
+      elsif draw?
+        display_board
+        puts "🤝 It's a draw!"
+        break
+      else
+        switch_player
+      end
+    end
+  end
+
+  private
+
+  def display_board
+    puts "\n"
+    puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
+    puts "---+---+---"
+    puts " #{@board[3]} | #{@board[4]} | #{@board[5]} "
+    puts "---+---+---"
+    puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
+    puts "\n"
+  end
+
+  def player_move
+    loop do
+      print "Player #{@current_player}, choose a position (1-9): "
+      move = gets.chomp.to_i - 1
+      if valid_move?(move)
+        @board[move] = @current_player
+        break
+      else
+        puts "❌ Invalid move, try again."
+      end
+    end
+  end
+
+  def valid_move?(move)
+    move.between?(0, 8) && @board[move] == " "
+  end
+
+  def switch_player
+    @current_player = @current_player == "X" ? "O" : "X"
+  end
+
+  def winner?
+    winning_combinations.any? do |combo|
+      [@board[combo[0]], @board[combo[1]], @board[combo[2]]].uniq.length == 1 &&
+      @board[combo[0]] != " "
+    end
+  end
+
+  def draw?
+    @board.all? { |cell| cell != " " }
+  end
+
+  def winning_combinations
+    [
+      [0,1,2], [3,4,5], [6,7,8], # rows
+      [0,3,6], [1,4,7], [2,5,8], # columns
+      [0,4,8], [2,4,6]           # diagonals
+    ]
+  end
+end
+
+# Run the game
+TicTacToe.new.play
